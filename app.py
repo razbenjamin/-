@@ -3,6 +3,9 @@ import os
 
 from flask import Flask, render_template, request, redirect, url_for, session
 
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=10000)
+
 app = Flask(__name__)
 app.secret_key = 'סופר-סוד-שלך'  # שים פה משהו אקראי ולא לפרסום
 ADMIN_USER = 'admin'  # תחליף לשם שאתה רוצה שיהיה אדמין
